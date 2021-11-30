@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.main.ppstudy.mapper.RoleMapper">
+
+    <select id="getRoleById" parameterType="long" resultType="com.main.ppstudy.bean.RoleBean">
+        select *
+        from roles
+        where id = #{id}
+    </select>
+
+<!--    <insert id="addRole" parameterType="com.learn.springbootcurd.bean.Role" useGeneratedKeys="true" keyProperty="id">-->
+<!--        INSERT INTO `roles`-->
+<!--            (`name`)-->
+<!--        VALUES-->
+<!--            (#{role.name})-->
+<!--    </insert>-->
+
+</mapper>
