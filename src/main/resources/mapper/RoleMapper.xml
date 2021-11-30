@@ -12,7 +12,7 @@
     </select>
 
 <!--    <insert id="addRole" parameterType="com.learn.springbootcurd.bean.Role" useGeneratedKeys="true" keyProperty="id">-->
-<!--        INSERT INTO `roles`-->
+<!--        INSERT INTO `roles` -->
 <!--            (`name`)-->
 <!--        VALUES-->
 <!--            (#{role.name})-->
