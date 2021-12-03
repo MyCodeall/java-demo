@@ -6,8 +6,8 @@
 <mapper namespace="com.main.ppstudy.mapper.UserMapper">
 
     <insert id="addUser" parameterType="com.main.ppstudy.mapper.UserMapper">
-        insert into user (name, email, password)
-        values (#{name}, #{email}, #{password})
+        insert into user (name, email, password, nick_name)
+        values (#{name}, #{email}, #{password}, #{nickName})
     </insert>
 
 </mapper>
