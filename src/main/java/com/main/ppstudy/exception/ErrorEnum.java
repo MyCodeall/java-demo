@@ -10,7 +10,7 @@ public enum ErrorEnum {
     NO_PERMISSION(403,"无操作权限！"),
     NO_AUTH(401,"请先登录后操作！"),
     NOT_FOUND(404, "未找到该资源！"),
-    INTERNAL_SERVER_ERROR(500, "内部异常！"),
+    INTERNAL_SERVER_ERROR(500, "内部异常！")
     ;
 
     /** 错误码 */

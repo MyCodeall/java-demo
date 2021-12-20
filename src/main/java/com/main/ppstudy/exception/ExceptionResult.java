@@ -7,7 +7,7 @@ package com.main.ppstudy.exception;
  *     "msg": "ErpApiException",
  *     "content": null
  * }
- * @param <T>
+ * @param <T> //泛型定义【编写模板代码来适应任意类型】
  */
 public class ExceptionResult<T> {
     //状态码

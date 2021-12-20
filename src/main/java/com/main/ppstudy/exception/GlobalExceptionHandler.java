@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  *      @ExceptionHandler：说明捕获哪些异常，对那些异常进行处理
  *      @ResponseBody：用于将对象解析成json,方便前后端的交互
  */
-//@ControllerAdvice
+@ControllerAdvice
 @ResponseBody
 public class GlobalExceptionHandler {
 
@@ -29,7 +29,6 @@ public class GlobalExceptionHandler {
         return ExceptionResult.otherError(ErrorEnum.INTERNAL_SERVER_ERROR, e.getMessage());
     }
 
-
     /**
      * 处理自定义异常-ApiException
      */
@@ -39,7 +38,6 @@ public class GlobalExceptionHandler {
         logger.error("发生API异常", e);
         return ExceptionResult.apiError(e);
     }
-
 
     //TODO 根据其他业务情况处理不同的异常数据
 
